@@ -8,10 +8,10 @@ export async function createPayment(app, { name, price }) {
         comment: 'Оплата через SP Pay',
       },
     ],
-    // redirectUrl: 'https://sp-pay.ru/success',
-    // webhookUrl: 'https://sp-pay.ru/webhook',
-    redirectUrl: 'http://127.0.0.1:80/success',
-    webhookUrl: 'http://127.0.0.1:80/webhook',
+    redirectUrl: 'https://sp-pay.ru/success',
+    webhookUrl: 'https://sp-pay.ru/webhook',
+    // redirectUrl: 'http://127.0.0.1:80/success',
+    // webhookUrl: 'http://127.0.0.1:80/webhook',
     data: name,
   });
 }
